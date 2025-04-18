@@ -24,34 +24,34 @@
   /* gradient */
 
   --bg-gradient-onyx: linear-gradient(
-    to bottom right, 
-    hsl(240, 1%, 25%) 3%, 
-    hsl(0, 0%, 19%) 97%
+          to bottom right,
+          hsl(240, 1%, 25%) 3%,
+          hsl(0, 0%, 19%) 97%
   );
   --bg-gradient-jet: linear-gradient(
-    to bottom right, 
-    hsla(240, 1%, 18%, 0.251) 0%, 
-    hsla(240, 2%, 11%, 0) 100%
+          to bottom right,
+          hsla(240, 1%, 18%, 0.251) 0%,
+          hsla(240, 2%, 11%, 0) 100%
   ), hsl(240, 2%, 13%);
   --bg-gradient-yellow-1: linear-gradient(
-    to bottom right, 
-    hsl(45, 100%, 71%) 0%, 
-    hsla(36, 100%, 69%, 0) 50%
+          to bottom right,
+          hsl(210, 72%, 60%) 0%,
+          hsla(210, 72%, 60%, 0) 50%
   );
   --bg-gradient-yellow-2: linear-gradient(
-    135deg, 
-    hsla(45, 100%, 71%, 0.251) 0%, 
-    hsla(35, 100%, 68%, 0) 59.86%
+          135deg,
+          hsla(210, 72%, 60%, 0.251) 0%,
+          hsla(210, 72%, 60%, 0) 59.86%
   ), hsl(240, 2%, 13%);
   --border-gradient-onyx: linear-gradient(
-    to bottom right, 
-    hsl(0, 0%, 25%) 0%, 
-    hsla(0, 0%, 25%, 0) 50%
+          to bottom right,
+          hsl(0, 0%, 25%) 0%,
+          hsla(0, 0%, 25%, 0) 50%
   );
   --text-gradient-yellow: linear-gradient(
-    to right, 
-    hsl(45, 100%, 72%), 
-    hsl(35, 100%, 68%)
+          to right,
+          hsl(210, 72%, 60%),
+          hsl(210, 72%, 60%)
   );
 
   /* solid */
@@ -63,8 +63,8 @@
   --smoky-black: hsl(0, 0%, 7%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola: hsl(45, 100%, 72%);
-  --vegas-gold: hsl(45, 54%, 58%);
+  --orange-yellow-crayola: hsl(210, 72%, 60%);
+  --vegas-gold: hsl(210, 72%, 60%);
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
@@ -95,7 +95,7 @@
   /**
    * shadow
    */
-  
+
   --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
   --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
   --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
@@ -321,7 +321,7 @@ main {
   transition: var(--transition-2);
 }
 
-.sidebar.active { max-height: 405px; }
+.sidebar.active { max-height: 900px; }
 
 .sidebar-info {
   position: relative;
@@ -439,6 +439,7 @@ main {
 }
 
 .social-item .social-link {
+  display: flex;
   color: var(--light-gray-70);
   font-size: 18px;
 }
@@ -509,7 +510,7 @@ main {
 
 
 /**
- * #service 
+ * #service
  */
 
 .service { margin-bottom: 35px; }
@@ -557,7 +558,7 @@ main {
 
 
 /**
- * #testimonials 
+ * #testimonials
  */
 
 .testimonials { margin-bottom: 30px; }
@@ -723,7 +724,7 @@ main {
 
 
 /**
- * #clients 
+ * #clients
  */
 
 .clients { margin-bottom: 15px; }
@@ -768,7 +769,7 @@ main {
 
 
 /**
- * education and experience 
+ * education and experience
  */
 
 .timeline { margin-bottom: 30px; }
@@ -829,9 +830,13 @@ main {
   line-height: 1.6;
 }
 
+.timeline-text > .technologies {
+  text-decoration-color: var(--orange-yellow-crayola);
+}
+
 
 /**
- * skills 
+ * skills
  */
 
 .skills-title { margin-bottom: 20px; }
@@ -955,11 +960,14 @@ main {
 
 .project-img {
   position: relative;
-  width: 100%;
-  height: 200px;
+  /* width: 100%;
+  height: 200px; */
   border-radius: 16px;
   overflow: hidden;
   margin-bottom: 15px;
+  height: auto;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .project-img::before {
@@ -1014,16 +1022,20 @@ main {
 
 .project-title {
   color: var(--white-2);
-  font-size: var(--fs-5);
+  /*font-size: var(--fs-5);*/
   font-weight: var(--fw-400);
   text-transform: capitalize;
   line-height: 1.3;
+  font-size: 13px;
+  text-align: center;
 }
 
 .project-category {
   color: var(--light-gray-70);
-  font-size: var(--fs-6);
+  /*font-size: var(--fs-6);*/
   font-weight: var(--fw-300);
+  font-size: 12px;
+  text-align: center;
 }
 
 
@@ -1114,6 +1126,74 @@ main {
   line-height: 1.6;
 }
 
+.skill-item {
+  margin: 5px;
+  color: var(--white-1);
+  background: var(--onyx);
+  font-size: var(--fs-8);
+  font-weight: var(--fw-300);
+  width: auto;
+  padding: 3px 12px;
+  height: auto;
+  border-radius: 8px;
+  display: inline-block;
+  line-height: 25px;
+  cursor: pointer;
+}
+
+.skill-item a {
+  color: var(--white-1);
+  text-decoration: underline;
+  display: inline;
+}
+
+.skill-item a:hover {
+  color: var(--light-gray-70);
+  text-decoration: underline;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  background: var(--onyx);
+  padding: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  margin-left: -12px;
+  justify-content: center;
+  -webkit-border-radius: 8px;
+  -webkit-border-top-left-radius: 1px;
+  -webkit-border-top-right-radius: 1px;
+  -moz-border-radius: 8px;
+  -moz-border-radius-top-left: 1px;
+  -moz-border-radius-top-right: 1px;
+  border-radius: 8px;
+  border-top-left-radius: 1px;
+  border-top-right-radius: 1px;
+}
+
+.skill-item:hover {
+  -webkit-border-radius: 8px;
+  -webkit-border-bottom-left-radius: 1px;
+  -moz-border-radius: 8px;
+  -moz-border-radius-bottom-left: 1px;
+  -moz-border-radius-bottom-right: 1px;
+  border-radius: 8px;
+  border-bottom-left-radius: 1px;
+  border-bottom-right-radius: 1px;
+}
+
+.tooltip img {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
+
+.skill-item:hover .tooltip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
 
 
 
@@ -1221,6 +1301,16 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .form-btn:disabled:hover::before { background: var(--bg-gradient-jet); }
 
+/*-----------------------------------*\
+  #IMPRINT
+\*-----------------------------------*/
+
+.imprint-header {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  font-size: large !important;
+}
+
 
 
 
@@ -1244,7 +1334,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   /**
-   * #PORTFOLIO, BLOG 
+   * #PORTFOLIO, BLOG
    */
 
   .project-img,
@@ -1638,7 +1728,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     width: max-content;
     margin-left: auto;
   }
-  
+
 }
 
 
@@ -1681,7 +1771,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   /**
-   * MAIN 
+   * MAIN
    */
 
   main { margin-bottom: 60px; }
@@ -1779,7 +1869,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     background: hsla(0, 0%, 100%, 0.1);
     border-radius: 20px;
     box-shadow: inset 1px 1px 0 hsla(0, 0%, 100%, 0.11),
-                inset -1px -1px 0 hsla(0, 0%, 100%, 0.11);
+    inset -1px -1px 0 hsla(0, 0%, 100%, 0.11);
   }
 
   body::-webkit-scrollbar-thumb:hover { background: hsla(0, 0%, 100%, 0.15); }
@@ -1875,7 +1965,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   /**
 	 * RESUME
-	 */
+  */
 
   .timeline-text { max-width: 700px; }
 
