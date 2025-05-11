@@ -7,10 +7,7 @@
  * copyright 2022 @codewithsadee
  */
 
-
-
-
-
+ 
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
@@ -607,7 +604,6 @@ main {
   overflow: hidden;
 }
 
-
 /**
  * #testimonials-modal
  */
@@ -721,7 +717,6 @@ main {
   line-height: 1.6;
 }
 
-
 /**
  * #clients
  */
@@ -755,10 +750,6 @@ main {
 }
 
 .clients-item img:hover { filter: grayscale(0); }
-
-
-
-
 
 /*-----------------------------------*\
   #RESUME
@@ -833,7 +824,6 @@ main {
   text-decoration-color: var(--orange-yellow-crayola);
 }
 
-
 /**
  * skills
  */
@@ -870,10 +860,6 @@ main {
   height: 100%;
   border-radius: inherit;
 }
-
-
-
-
 
 /*-----------------------------------*\
   #PORTFOLIO
