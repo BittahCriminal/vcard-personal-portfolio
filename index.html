@@ -42,7 +42,7 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Leo A Richard" width="80">
+          <img src="./assets/images/image000000_dng.jpg" alt="Leo A Richard" width="80">
         </figure>
 
         <div class="info-content">
@@ -74,7 +74,21 @@
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:l.richard@bytecloudconsulting.com" class="contact-link">l.richard@bytecloudconsulting.com</a>
+              <a href="mailto:l.richard@codingsanity.net" class="contact-link">l.richard@codingsanity.net</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+14257654984" class="contact-link">+1 (425) 765-4984</a>
             </div>
 
           </li>
@@ -88,7 +102,7 @@
             <div class="contact-info">
               <p class="contact-title">Location</p>
 
-              <address>Seattle, Washington, USA</address>
+              <address>Bellevue, WA</address>
             </div>
 
           </li>
@@ -101,19 +115,19 @@
 
           <li class="social-item">
             <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/leotus-a-richard/" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
             <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
+              <ion-icon name="mail-outline"></ion-icon>
             </a>
           </li>
 
@@ -177,7 +191,7 @@
 
         <section class="about-text">
           <p>
-            DevOps and Platform Engineer with 10+ years of experience leading security architecture, threat modeling, DevSecOps and Data Engineering initiatives across financial services, healthcare, and technology sectors. Proven success aligning infrastructure, compliance, and automation practices with NIST, CIS, and MITRE ATT&CK frameworks on Azure, and GCP. Expert in designing secure, scalable, and observable platforms that drive resilience and regulatory compliance.
+            Platform Engineer with 10+ years of hands-on experience automating delivery pipelines, codifying cloud infrastructure, and hardening production platforms in regulated industries. Expert in Azure DevOps, GitLab, and GitHub Actions. A proven record of accelerating release velocity, eliminating configuration drift, and improving uptime through observability and proactive incident response. Trusted technical leader who partners with development, security, and operations teams to deliver resilient, secure, and cost-effective solutions.
           </p>
         </section>
 
@@ -451,7 +465,37 @@
 
         <header>
           <h2 class="h2 article-title">Resume</h2>
+          <p class="role-selector-intro">Select a role to see tailored resume content:</p>
         </header>
+
+        <section class="role-selector-resume">
+          <div class="role-buttons-container">
+            <button class="role-btn active" data-role="platform-engineer">
+              <ion-icon name="hardware-chip-outline"></ion-icon>
+              <span>Platform Engineer</span>
+            </button>
+            <button class="role-btn" data-role="sre">
+              <ion-icon name="shield-checkmark-outline"></ion-icon>
+              <span>SRE</span>
+            </button>
+            <button class="role-btn" data-role="data-engineer">
+              <ion-icon name="analytics-outline"></ion-icon>
+              <span>Data Engineer</span>
+            </button>
+            <button class="role-btn" data-role="devops-engineer">
+              <ion-icon name="git-branch-outline"></ion-icon>
+              <span>DevOps Engineer</span>
+            </button>
+            <button class="role-btn" data-role="sr-system-engineer">
+              <ion-icon name="server-outline"></ion-icon>
+              <span>Sr System Engineer</span>
+            </button>
+            <button class="role-btn" data-role="lead-cloud-engineer">
+              <ion-icon name="cloud-outline"></ion-icon>
+              <span>Lead Cloud Engineer</span>
+            </button>
+          </div>
+        </section>
 
         <section class="timeline" hidden>
 
@@ -489,59 +533,135 @@
 
           <ol class="timeline-list">
 
-            <li class="timeline-item">
+            <li class="timeline-item" data-roles="platform-engineer,lead-cloud-engineer,devops-engineer">
 
-              <h4 class="h4 timeline-item-title">Lead Platform Engineer</h4>
+              <h4 class="h4 timeline-item-title">Lead Devops Engineer</h4>
 
-              <span>November 2021 — Present</span>
+              <span>June 2025 — December 2025</span>
 
               <p class="timeline-text">
+                <strong>Auger LLC (Quadrant Technologies LLC)</strong> - Bellevue, WA
                 <ul>
-                     <li>
-                      I help guide the development of the cloud migration (Azure, GCP) strategy by partnering with internal stakeholders to prioritize projects, gather requirements and building dashboards to communicate progress effectively.
-                    </li>
+                  <li>Architected and implemented CDKTF infrastructure-as-code framework for Azure, enabling 15+ service teams to self-provision Container Apps, Key Vaults, Storage Accounts, VNets, and Private Link resources—reducing service onboarding from weeks to 2 days</li>
+                  <li>Migrated self-service IaC to a platform engineering API using Terraform, Ansible, and PowerShell, streamlining CDKTF migration and reducing application owner turnaround time by 38% with integrated Datadog observability</li>
+                  <li>Architected zero-trust networking model with private DNS, private endpoints, and subnet isolation across Azure environments, enhancing security posture and network segmentation</li>
+                  <li>Designed intelligent request routing algorithm for AI inference platform, orchestrating load distribution across on-premises GPU clusters, Azure OpenAI, and Fireworks.ai with automatic failover and overflow handling</li>
+                  <li>Established CI/CD pipelines in Azure DevOps with GitHub integration, implementing SBOM generation, vulnerability scanning, and automated PR review workflows</li>
+                  <li>Mentored engineering teams on infrastructure pipeline best practices and led architectural decisions for platform standardization</li>
+                  <li>Implemented comprehensive observability stack using Datadog and Azure Log Analytics for monitoring and troubleshooting across distributed services</li>
+                  <li>Help guide the development of the cloud migration (Azure, GCP) strategy by partnering with internal stakeholders to prioritize projects, gather requirements and building dashboards to communicate progress effectively</li>
                 </ul>
               </p>
 
             </li>
 
-            <li class="timeline-item">
+            <li class="timeline-item" data-roles="platform-engineer,lead-cloud-engineer,devops-engineer">
+
+              <h4 class="h4 timeline-item-title">Lead Platform Engineer</h4>
+
+              <span>November 2021 — August 2024</span>
+
+              <p class="timeline-text">
+                <strong>Cloud Byte Consulting LLC</strong> — Bellevue, WA
+                <ul>
+                  <li>Architect and maintain Azure DevOps multi-stage pipelines (build, test, security scan, deploy) for 25+ micro-services, achieving 40% faster delivery cycles through parallel stages and reusable YAML templates</li>
+                  <li>Key contributor to the planning and migration of pipelines and CI/CD services to GitHub Actions</li>
+                  <li>Codified an enterprise Terraform module registry (50+ modules), enforced with OPA policy sets and automated unit tests, eliminating 90% of post-deploy drift and cutting environment provisioning time from hours to minutes</li>
+                  <li>Wrote Go-based platform API that provisions standardized Azure landing zones; reduced developer onboarding from 2 days to < 2 hours by abstracting infrastructure complexity behind self-service workflows</li>
+                  <li>Implemented Prometheus + Grafana dashboards and Azure Monitor alerts with SLO-driven thresholds, shrinking MTTR by 55% and providing real-time capacity insights for autoscaling rules</li>
+                  <li>Mentor a cross-functional team of six engineers, championing the Azure Well-Architected Framework and cost optimization best practices that saved $120K annually</li>
+                </ul>
+              </p>
+
+            </li>
+
+            <li class="timeline-item" data-roles="platform-engineer,devops-engineer,sre,sr-system-engineer">
 
               <h4 class="h4 timeline-item-title">Software Engineer III</h4>
 
-              <span>November 2021 — February 2024</span>
+              <span>November 2021 — 2024</span>
 
               <p class="timeline-text">
-                Designed, developed, and maintained key product components for the Central Manager Product. Worked on a variety of technical problems, focusing on enhancing functionality and performance.
-                Collaborated with cross-functional teams, providing technical guidance and mentorship to junior engineers. Played an emerging leadership role within project teams, driving initiatives and ensuring project success
-                Evaluated and tuned the performance of product components, addressing bottlenecks and implementing improvements that increased system efficiency by 25%.
-                Successfully led the initiative to implement a improvements continuous integration and delivery (CI/CD) pipeline, resulting in a 40% reduction in build times.
-                Actively monitored and assessed the security posture of Central Manager. Prepared, presented, and communicated key changes in code that impacted security, ensuring robust defense mechanisms were in place (TMA or Threat Model Assessments)
-                Performed SBOM (Software Bill of Materials) for Central Manager to adhere to Regulatory Compliance, and Security Vulnerability Management.
+                <strong>F5 Networks</strong> — Seattle, WA
+                <ul>
+                  <li>Conducted technical threat assessments and cloud architecture reviews for F5 Distributed Cloud and Central Manager</li>
+                  <li>Built internal tools to map attack paths to MITRE ATT&CK for prioritizing mitigations during architecture design</li>
+                  <li>Implemented a threat modeling process leveraging IriusRisk and Jira workflows. Reduced time-to-remediate critical threats by 40% and improved audit readiness with automated control mapping</li>
+                  <li>Performed SBOM (Software Bill of Materials) for Central Manager to adhere to Regulatory Compliance and Security Vulnerability Management</li>
+                  <li>Designed, developed, and maintained key product components for the Central Manager Product. Worked on a variety of technical problems, focusing on enhancing functionality and performance</li>
+                  <li>Automated CI/CD tasks using Python, Ansible, and Bash to increase efficiency of build and release times</li>
+                  <li>Written Python tests using PyTest to ensure code quality and environment consistency</li>
+                  <li>Collaborated with cross-functional teams, providing technical guidance and mentorship to junior engineers. Played an emerging leadership role within project teams, driving initiatives and ensuring project success</li>
+                  <li>Evaluated and optimized performance, addressing bottlenecks and implementing improvements that increased system efficiency by 25%</li>
+                  <li>Successfully led the initiative to implement improvements to continuous integration and delivery (CI/CD) pipeline, resulting in a 40% reduction in build times by using builder pattern in container builds</li>
+                </ul>
               </p>
 
             </li>
 
-            <li class="timeline-item">
+            <li class="timeline-item" data-roles="sr-system-engineer,lead-cloud-engineer,sre,devops-engineer,platform-engineer">
 
-              <h4 class="h4 timeline-item-title">Senior Systems Engineer</h4>
+              <h4 class="h4 timeline-item-title">Sr. Systems Engineer</h4>
 
-              <span>November 2018 - October 2021</span>
+              <span>November 2018 — October 2021</span>
 
               <p class="timeline-text">
-                        Led the migration of the company's infrastructure to Azure, resulting in a 30% reduction in costs and a 50% increase in efficiency.
-                        Implemented a new monitoring system that reduced downtime by 40%.
-                        Developed a new incident response plan that reduced incident resolution time by 50%.
-                        Created a new training program for junior engineers that improved their performance by 30%.
-                        Led a team of engineers in the development of a new cloud-based application that improved customer satisfaction by 20%.
+                <strong>Boeing Employees Credit Union (BECU)</strong> — Tukwila, WA
+                <ul>
+                  <li>Maintained, built, developed, and migrated systems and applications into the cloud. Developing in C# and PowerShell for platform APIs, PowerShell modules, and IaC</li>
+                  <li>Created unit, integration, and interoperability tests and integrated them into CI/CD pipelines</li>
+                  <li>Employed multiple Azure offerings such as APIM, Azure App Service, Logic Apps, and Azure Automation to provide robust APIs</li>
+                  <li>Extended Platform API functionality to allow customers to self-service existing manual processes. Providing more control over systems such as PanOS (Palo Alto FW), Splunk, and AppDynamics</li>
+                  <li>Automated the provisioning of Palo Alto Firewalls using IaC and Python with High Availability and geo-redundancy</li>
+                  <li>Utilizing Azure Monitor, created transparent and intuitive dashboards that aided internal teams to easily provide insights into their web applications</li>
+                  <li>Lead efforts for developing prototypes, PoC, and solutions to establish standards and practices for internal customers</li>
+                  <li>Designed multiple systems and applications with security in mind at the earliest stages. Anticipating and implementing cybersecurity patterns that meet PCI DSS compliance</li>
+                </ul>
               </p>
 
             </li>
-            <li class="timeline-item">
+
+            <li class="timeline-item" data-roles="devops-engineer,platform-engineer,lead-cloud-engineer">
+
               <h4 class="h4 timeline-item-title">Cloud Automation Engineer</h4>
-              <span></span>
+
+              <span>October 2017 — November 2018</span>
+
+              <p class="timeline-text">
+                <strong>BECU (Widenet Consulting Group)</strong>
+                <ul>
+                  <li>Consulted in the initial stages of BECU's digital transformation. Working with internal teams to establish standards and best practices in the cloud</li>
+                  <li>Contributing to architectural discussions on what BECU could look like in a cloud environment</li>
+                  <li>Enforced cloud governance in the cloud to cut costs, prevent resource sprawl, and add security policies using Azure Policy to subscriptions</li>
+                  <li>Practiced Agile and Kanban methodology to deliver software for customers</li>
+                  <li>Developed, tested, and delivered Infrastructure for customers using IaC</li>
+                  <li>Automated Windows OS configuration using PowerShell DSC and Azure Automation. Designed to enforce security compliance and CIS Level 1 benchmarks. Compliance rose from 44% with this implementation</li>
+                  <li>Participated in the migration process to bring applications from datacenters into the cloud</li>
+                  <li>Designed and implemented disaster recovery solutions for applications, systems, and resources to maintain SLAs</li>
+                  <li>Participate in project teams throughout the organization to provide systems expertise and accomplish business objectives</li>
+                </ul>
+              </p>
+
             </li>
-            <li class="timeline-item">
+
+            <li class="timeline-item" data-roles="sr-system-engineer,sre">
+
+              <h4 class="h4 timeline-item-title">Xbox Service Engineer</h4>
+
+              <span>August 2013 — August 2018</span>
+
+              <p class="timeline-text">
+                <strong>Milestone Technologies (AKA Covestic Inc.)</strong>
+                <ul>
+                  <li>Responsible for having a high-level knowledge of Xbox Live Services. Coordinating the engagement of the correct team to remediate outages and degradation of services</li>
+                  <li>Subject matter expert in a 24x7 production environment supporting critical real-time applications; troubleshooting a wide variety of server applications, databases, and networking issues</li>
+                  <li>Supported Xbox Live Service by collaborating with multiple service engineering teams to produce and support a highly reliable experience for users</li>
+                  <li>Frequently worked with leadership to contribute to near and long-term planning exercises</li>
+                  <li>Designed, wrote, and delivered software to measure and/or improve the availability, scalability, latency, and efficiency of Xbox Live Services</li>
+                  <li>Provide subject matter expertise and consultation regarding service impact and mitigation steps</li>
+                  <li>Managed the upgrade path of services from 2008 R2 and 2012 R2 to 2016</li>
+                </ul>
+              </p>
 
             </li>
 
@@ -551,9 +671,73 @@
 
         <section class="Skills">
           <h2>Skills</h2>
-          <div class="skill-item">
-            AWS
-            <div class="tooltip">test</div>
+          <div class="skills-grid">
+            <div class="skill-item" data-roles="platform-engineer,lead-cloud-engineer,devops-engineer,sre,sr-system-engineer,data-engineer">
+              <h4>Hyper-Scalers</h4>
+              <ul>
+                <li>Azure</li>
+                <li>AWS</li>
+                <li>GCP</li>
+              </ul>
+            </div>
+
+            <div class="skill-item" data-roles="platform-engineer,devops-engineer,sre,sr-system-engineer,lead-cloud-engineer">
+              <h4>Security</h4>
+              <ul>
+                <li>Azure Sentinel</li>
+                <li>Splunk</li>
+                <li>Azure Monitor</li>
+                <li>MITRE ATT&CK Framework</li>
+              </ul>
+            </div>
+
+            <div class="skill-item" data-roles="platform-engineer,devops-engineer,lead-cloud-engineer">
+              <h4>Infrastructure as Code (IaC)</h4>
+              <ul>
+                <li>Terraform</li>
+                <li>Azure Bicep</li>
+                <li>ARM Templates</li>
+              </ul>
+            </div>
+
+            <div class="skill-item" data-roles="platform-engineer,devops-engineer,sre,sr-system-engineer,lead-cloud-engineer,data-engineer">
+              <h4>Coding & Scripting</h4>
+              <ul>
+                <li>Ruby</li>
+                <li>C#</li>
+                <li>Golang</li>
+                <li>Python</li>
+                <li>Ansible</li>
+                <li>PowerShell</li>
+                <li>Bash</li>
+                <li>NuShell</li>
+              </ul>
+            </div>
+
+            <div class="skill-item" data-roles="platform-engineer,devops-engineer,sre,sr-system-engineer,lead-cloud-engineer,data-engineer">
+              <h4>DevOps</h4>
+              <ul>
+                <li>GCP Build</li>
+                <li>Azure DevOps</li>
+                <li>GitHub</li>
+                <li>GitLab</li>
+                <li>Jenkins</li>
+                <li>ArgoCD</li>
+                <li>Agile Methodology</li>
+              </ul>
+            </div>
+
+            <div class="skill-item" data-roles="platform-engineer,lead-cloud-engineer,data-engineer,devops-engineer,sre,sr-system-engineer">
+              <h4>Key Certifications</h4>
+              <ul>
+                <li>Certified Platform Engineering Professional</li>
+                <li>AWS Solutions Architect Professional</li>
+                <li>Azure Architect Professional</li>
+                <li>Google Cloud Architect</li>
+                <li>CKA & CKAD</li>
+                <li>Certificate in Machine Learning</li>
+              </ul>
+            </div>
           </div>
         </section>
 
@@ -582,7 +766,7 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web design</button>
+              <button data-filter-btn>Cloud Architecture</button>
             </li>
 
             <li class="filter-item">
@@ -614,7 +798,7 @@
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web design</button>
+                <button data-select-item>Cloud Architecture</button>
               </li>
 
               <li class="select-item">
@@ -631,7 +815,7 @@
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item  active" data-filter-item data-category="Cloud Architecture" data-roles="lead-cloud-engineer,platform-engineer,devops-engineer">
               <a href="#">
 
                 <figure class="project-img">
@@ -644,12 +828,12 @@
 
                 <h3 class="project-title">Finance</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">Cloud Architecture</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item  active" data-filter-item data-category="Cloud Architecture" data-roles="platform-engineer,sre,lead-cloud-engineer">
               <a href="#">
 
                 <figure class="project-img">
@@ -662,12 +846,12 @@
 
                 <h3 class="project-title">Orizon</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">Cloud Architecture</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item  active" data-filter-item data-category="Cloud Architecture" data-roles="devops-engineer,sr-system-engineer,platform-engineer">
               <a href="#">
 
                 <figure class="project-img">
@@ -680,12 +864,12 @@
 
                 <h3 class="project-title">Fundo</h3>
 
-                <p class="project-category">Web design</p>
+                <p class="project-category">Cloud Architecture</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
+            <li class="project-item  active" data-filter-item data-category="Applications" data-roles="devops-engineer,platform-engineer,sre">
               <a href="#">
 
                 <figure class="project-img">
@@ -703,7 +887,7 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item  active" data-filter-item data-category="Cloud Architecture" data-roles="data-engineer,platform-engineer">
               <a href="#">
 
                 <figure class="project-img">
@@ -716,12 +900,12 @@
 
                 <h3 class="project-title">DSM.</h3>
 
-                <p class="project-category">Web design</p>
+                <p class="project-category">Cloud Architecture</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item  active" data-filter-item data-category="Cloud Architecture" data-roles="lead-cloud-engineer,platform-engineer,devops-engineer,sre">
               <a href="#">
 
                 <figure class="project-img">
@@ -734,12 +918,12 @@
 
                 <h3 class="project-title">MetaSpark</h3>
 
-                <p class="project-category">Web design</p>
+                <p class="project-category">Cloud Architecture</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item  active" data-filter-item data-category="Web development" data-roles="devops-engineer,platform-engineer">
               <a href="#">
 
                 <figure class="project-img">
@@ -757,7 +941,7 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
+            <li class="project-item  active" data-filter-item data-category="Applications" data-roles="sre,sr-system-engineer,platform-engineer">
               <a href="#">
 
                 <figure class="project-img">
@@ -775,7 +959,7 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item  active" data-filter-item data-category="Web development" data-roles="devops-engineer,platform-engineer,lead-cloud-engineer">
               <a href="#">
 
                 <figure class="project-img">
@@ -814,15 +998,19 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web design</button>
+              <button data-filter-btn>Cloud</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Applications</button>
+              <button data-filter-btn>Platform Engineering</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web development</button>
+              <button data-filter-btn>Machine Learning</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Security</button>
             </li>
 
           </ul>
@@ -846,182 +1034,184 @@
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web design</button>
+                <button data-select-item>Cloud</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Applications</button>
+                <button data-select-item>Platform Engineering</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web development</button>
+                <button data-select-item>Machine Learning</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Security</button>
               </li>
 
             </ul>
 
           </div>
 
-          <ul class="project-list">
+          <ul class="certification-list">
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+            <!-- Microsoft Azure Security Engineering Associate -->
+            <li class="certification-item active" data-filter-item data-category="Cloud" data-roles="platform-engineer,devops-engineer,lead-cloud-engineer,sre">
+              <a href="#" target="_blank" rel="noopener">
+                <figure class="certification-badge">
+                  <div class="certification-placeholder">
+                    <ion-icon name="shield-checkmark-outline"></ion-icon>
                   </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
                 </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
-
+                <div class="certification-content">
+                  <h3 class="certification-title">Azure Security Engineering Associate</h3>
+                  <p class="certification-issuer">Microsoft</p>
+                  <p class="certification-category">Cloud</p>
+                </div>
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+            <!-- Microsoft Azure Administrator Associate -->
+            <li class="certification-item active" data-filter-item data-category="Cloud" data-roles="platform-engineer,devops-engineer,lead-cloud-engineer,sre,sr-system-engineer">
+              <a href="#" target="_blank" rel="noopener">
+                <figure class="certification-badge">
+                  <div class="certification-placeholder">
+                    <ion-icon name="cloud-outline"></ion-icon>
                   </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
                 </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
+                <div class="certification-content">
+                  <h3 class="certification-title">Azure Administrator Associate</h3>
+                  <p class="certification-issuer">Microsoft</p>
+                  <p class="certification-category">Cloud</p>
+                </div>
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+            <!-- Microsoft Azure Architect Professional -->
+            <li class="certification-item active" data-filter-item data-category="Cloud" data-roles="platform-engineer,lead-cloud-engineer">
+              <a href="#" target="_blank" rel="noopener">
+                <figure class="certification-badge">
+                  <div class="certification-placeholder">
+                    <ion-icon name="construct-outline"></ion-icon>
                   </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
                 </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
+                <div class="certification-content">
+                  <h3 class="certification-title">Azure Architect Professional</h3>
+                  <p class="certification-issuer">Microsoft</p>
+                  <p class="certification-category">Cloud</p>
+                </div>
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+            <!-- AWS Solutions Architect Associate -->
+            <li class="certification-item active" data-filter-item data-category="Cloud" data-roles="platform-engineer,devops-engineer,lead-cloud-engineer">
+              <a href="#" target="_blank" rel="noopener">
+                <figure class="certification-badge">
+                  <div class="certification-placeholder">
+                    <ion-icon name="logo-amazon"></ion-icon>
                   </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
                 </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
+                <div class="certification-content">
+                  <h3 class="certification-title">AWS Solutions Architect Associate</h3>
+                  <p class="certification-issuer">Amazon Web Services</p>
+                  <p class="certification-category">Cloud</p>
+                </div>
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+            <!-- AWS Solutions Architect Professional -->
+            <li class="certification-item active" data-filter-item data-category="Cloud" data-roles="platform-engineer,lead-cloud-engineer">
+              <a href="#" target="_blank" rel="noopener">
+                <figure class="certification-badge">
+                  <div class="certification-placeholder">
+                    <ion-icon name="logo-amazon"></ion-icon>
                   </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
                 </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
+                <div class="certification-content">
+                  <h3 class="certification-title">AWS Solutions Architect Professional</h3>
+                  <p class="certification-issuer">Amazon Web Services</p>
+                  <p class="certification-category">Cloud</p>
+                </div>
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+            <!-- Google Cloud Architect -->
+            <li class="certification-item active" data-filter-item data-category="Cloud" data-roles="platform-engineer,devops-engineer,lead-cloud-engineer,data-engineer">
+              <a href="#" target="_blank" rel="noopener">
+                <figure class="certification-badge">
+                  <div class="certification-placeholder">
+                    <ion-icon name="logo-google"></ion-icon>
                   </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
                 </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
+                <div class="certification-content">
+                  <h3 class="certification-title">Google Cloud Architect</h3>
+                  <p class="certification-issuer">Google Cloud</p>
+                  <p class="certification-category">Cloud</p>
+                </div>
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+            <!-- Certified Kubernetes Administrator (CKA) -->
+            <li class="certification-item active" data-filter-item data-category="Platform Engineering" data-roles="platform-engineer,devops-engineer,sre,lead-cloud-engineer">
+              <a href="#" target="_blank" rel="noopener">
+                <figure class="certification-badge">
+                  <div class="certification-placeholder">
+                    <ion-icon name="server-outline"></ion-icon>
                   </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
                 </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
+                <div class="certification-content">
+                  <h3 class="certification-title">Certified Kubernetes Administrator (CKA)</h3>
+                  <p class="certification-issuer">CNCF</p>
+                  <p class="certification-category">Platform Engineering</p>
+                </div>
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+            <!-- Certified Kubernetes Application Developer (CKAD) -->
+            <li class="certification-item active" data-filter-item data-category="Platform Engineering" data-roles="platform-engineer,devops-engineer,sre">
+              <a href="#" target="_blank" rel="noopener">
+                <figure class="certification-badge">
+                  <div class="certification-placeholder">
+                    <ion-icon name="code-outline"></ion-icon>
                   </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
                 </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
+                <div class="certification-content">
+                  <h3 class="certification-title">Certified Kubernetes Application Developer (CKAD)</h3>
+                  <p class="certification-issuer">CNCF</p>
+                  <p class="certification-category">Platform Engineering</p>
+                </div>
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+            <!-- Platform Engineering Certified Practitioner -->
+            <li class="certification-item active" data-filter-item data-category="Platform Engineering" data-roles="platform-engineer,devops-engineer,lead-cloud-engineer">
+              <a href="https://www.virtualbadge.io/certificate-validator?credential=64741d13-f9c8-432c-a00b-c84a3765ff0e" target="_blank" rel="noopener">
+                <figure class="certification-badge">
+                  <div class="certification-placeholder">
+                    <ion-icon name="ribbon-outline"></ion-icon>
                   </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
                 </figure>
+                <div class="certification-content">
+                  <h3 class="certification-title">Certified Platform Engineering Professional</h3>
+                  <p class="certification-issuer">Platform Engineering</p>
+                  <p class="certification-category">Platform Engineering</p>
+                  <p class="certification-verify">Click to verify credential</p>
+                </div>
+              </a>
+            </li>
 
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
+            <!-- Certificate in Machine Learning -->
+            <li class="certification-item active" data-filter-item data-category="Machine Learning" data-roles="data-engineer,platform-engineer">
+              <a href="https://badgr.com/public/assertions/hdbcn4ptTQO1dpxIEHriKA" target="_blank" rel="noopener">
+                <figure class="certification-badge">
+                  <img src="https://api.badgr.io/public/assertions/hdbcn4ptTQO1dpxIEHriKA/image" alt="Introduction To Machine Learning" loading="lazy">
+                </figure>
+                <div class="certification-content">
+                  <h3 class="certification-title">Certificate in Machine Learning</h3>
+                  <p class="certification-issuer">University of Washington</p>
+                  <p class="certification-category">Machine Learning</p>
+                  <time class="certification-date" datetime="2025-07-01">Issued: July 2025</time>
+                </div>
               </a>
             </li>
 
@@ -1049,7 +1239,7 @@
 
           <ul class="blog-posts-list">
 
-            <li class="blog-post-item">
+            <li class="blog-post-item" data-roles="platform-engineer,devops-engineer">
               <a href="#">
 
                 <figure class="blog-banner-box">
@@ -1077,7 +1267,7 @@
               </a>
             </li>
 
-            <li class="blog-post-item">
+            <li class="blog-post-item" data-roles="platform-engineer,devops-engineer,lead-cloud-engineer">
               <a href="#">
 
                 <figure class="blog-banner-box">
@@ -1105,7 +1295,7 @@
               </a>
             </li>
 
-            <li class="blog-post-item">
+            <li class="blog-post-item" data-roles="sre,devops-engineer,sr-system-engineer">
               <a href="#">
 
                 <figure class="blog-banner-box">
@@ -1133,7 +1323,7 @@
               </a>
             </li>
 
-            <li class="blog-post-item">
+            <li class="blog-post-item" data-roles="platform-engineer,lead-cloud-engineer">
               <a href="#">
 
                 <figure class="blog-banner-box">
@@ -1161,7 +1351,7 @@
               </a>
             </li>
 
-            <li class="blog-post-item">
+            <li class="blog-post-item" data-roles="data-engineer,platform-engineer">
               <a href="#">
 
                 <figure class="blog-banner-box">
@@ -1189,7 +1379,7 @@
               </a>
             </li>
 
-            <li class="blog-post-item">
+            <li class="blog-post-item" data-roles="sre,sr-system-engineer,lead-cloud-engineer">
               <a href="#">
 
                 <figure class="blog-banner-box">

@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(start index.html)",
+      "WebFetch(domain:www.virtualbadge.io)",
+      "WebFetch(domain:badgr.com)",
+      "WebFetch(domain:www.credly.com)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

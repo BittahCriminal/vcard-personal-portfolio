@@ -84,7 +84,7 @@ const filterFunc = function (selectedValue) {
 
     if (selectedValue === "all") {
       filterItems[i].classList.add("active");
-    } else if (selectedValue === filterItems[i].dataset.category) {
+    } else if (selectedValue === filterItems[i].dataset.category.toLowerCase()) {
       filterItems[i].classList.add("active");
     } else {
       filterItems[i].classList.remove("active");
@@ -156,4 +156,91 @@ for (let i = 0; i < navigationLinks.length; i++) {
     }
 
   });
+}
+
+
+
+// Role-based content filtering for Resume page
+const roleButtons = document.querySelectorAll('[data-role]');
+let currentRole = 'platform-engineer'; // Default role
+
+// Function to filter content based on selected role
+function filterByRole(selectedRole) {
+  currentRole = selectedRole;
+
+  // Filter resume timeline items (experience)
+  const timelineItems = document.querySelectorAll('.timeline-item[data-roles]');
+  timelineItems.forEach(item => {
+    const roles = item.dataset.roles ? item.dataset.roles.split(',') : [];
+    if (roles.includes(selectedRole)) {
+      item.style.display = '';
+    } else {
+      item.style.display = 'none';
+    }
+  });
+
+  // Filter skills items
+  const skillItems = document.querySelectorAll('.skill-item[data-roles]');
+  skillItems.forEach(item => {
+    const roles = item.dataset.roles ? item.dataset.roles.split(',') : [];
+    if (roles.includes(selectedRole)) {
+      item.style.display = '';
+    } else {
+      item.style.display = 'none';
+    }
+  });
+
+  // Filter portfolio project items
+  const projectItems = document.querySelectorAll('.project-item[data-roles]');
+  projectItems.forEach(item => {
+    const roles = item.dataset.roles ? item.dataset.roles.split(',') : [];
+    if (roles.includes(selectedRole)) {
+      item.classList.add('active');
+    } else {
+      item.classList.remove('active');
+    }
+  });
+
+  // Filter blog post items
+  const blogItems = document.querySelectorAll('.blog-post-item[data-roles]');
+  blogItems.forEach(item => {
+    const roles = item.dataset.roles ? item.dataset.roles.split(',') : [];
+    if (roles.includes(selectedRole)) {
+      item.style.display = '';
+    } else {
+      item.style.display = 'none';
+    }
+  });
+
+  // Filter certification items
+  const certificationItems = document.querySelectorAll('.certification-item[data-roles]');
+  certificationItems.forEach(item => {
+    const roles = item.dataset.roles ? item.dataset.roles.split(',') : [];
+    if (roles.includes(selectedRole)) {
+      item.classList.add('active');
+    } else {
+      item.classList.remove('active');
+    }
+  });
+}
+
+// Add click event to all role buttons
+roleButtons.forEach(button => {
+  button.addEventListener('click', function() {
+    const selectedRole = this.getAttribute('data-role');
+
+    // Remove active class from all buttons
+    roleButtons.forEach(btn => btn.classList.remove('active'));
+
+    // Add active class to clicked button
+    this.classList.add('active');
+
+    // Filter content
+    filterByRole(selectedRole);
+  });
+});
+
+// Initialize with default role on page load
+if (roleButtons.length > 0) {
+  filterByRole(currentRole);
 }
